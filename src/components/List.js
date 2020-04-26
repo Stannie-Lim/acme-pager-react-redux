@@ -10,9 +10,7 @@ import Employee from './cards/Employee';
 const List = ({ match }) => {
     const dispatch = useDispatch();
     useEffect(() => {
-        const getData = async() => {
-            await dispatch(loadEmployees(match.params.num))
-        }
+        const getData = async() => await dispatch(loadEmployees(match.params.num))
         getData();
     }, [match.params.num]);
     
