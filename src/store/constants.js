@@ -1,0 +1,2 @@
+export const LOAD_EMPLOYEES = 'LOAD_EMPLOYEES';
+export const LOAD_COUNT = 'LOAD_COUNT';

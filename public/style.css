@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    margin: 2rem auto;
+    width: 60%;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+
+thead {
+    text-align: left;
+}
+
+tbody > tr:nth-child(2) {
+    background-color: lightgrey;
+}
+
+tbody tr:hover {
+    background-color: grey;
+}
