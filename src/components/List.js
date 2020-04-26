@@ -18,17 +18,19 @@ const List = ({ match }) => {
     
     const employees = useSelector(state => state.employees);
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Second Name</th>
-                    <th>Email</th>
-                    <th>Title</th>
-                </tr>
-            </thead>
-            { employees.map(employee => <Employee key={ employee.id } employee={ employee } /> ) }
-        </table>
+        <div className="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Second Name</th>
+                        <th>Email</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                { employees.map(employee => <Employee key={ employee.id } employee={ employee } /> ) }
+            </table>
+        </div>
     )
 }
 

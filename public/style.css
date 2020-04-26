@@ -2,26 +2,38 @@ body {
     font-family: sans-serif;
 }
 
-nav {
+h1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-table {
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    margin: 0 2rem;
+}
+
+.table {
+    overflow-y: scroll;
+    height: 70vh;
+    width: 50%;
     margin: 2rem auto;
-    width: 60%;
+}   
+
+table {
+    width: 100%;
     border-collapse: collapse;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 thead {
     text-align: left;
-}
-
-tbody > tr:nth-child(2) {
     background-color: lightgrey;
 }
 
 tbody tr:hover {
-    background-color: grey;
+    background-color: lightgrey;
 }

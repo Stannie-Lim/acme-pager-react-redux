@@ -19,9 +19,9 @@ const App = () => {
   return (
     <HashRouter>
           <h1>ACME Pager</h1>
-          <Route path='/' render={ props => <Nav { ...props } /> } />
           <Route exact path='/' render={ () =>  <Redirect to='/0' /> } />
           <Route exact path='/:num' component={ List } />
+          <Route path='/' render={ props => <Nav { ...props } /> } />
     </HashRouter>
   );
 };
